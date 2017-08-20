@@ -1,0 +1,28 @@
+body {
+    background: #996313;
+    text-align: center;
+}
+
+header {
+    float: left;
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+
+.left {
+    padding: 0;
+    width: 50%;
+    float: left; 
+}
+
+.right {
+    padding: 0;
+    width: 50%;
+    float: left;
+}
+
+.add {
+    clear: both;
+}
