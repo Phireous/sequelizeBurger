@@ -28,6 +28,7 @@
         <p>{{this.id}}. {{this.burger_name}}</p>
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
+          
           <input type="hidden" name="devoured" value="false">
           <button type="submit">THROW UP!</button>
         </form>

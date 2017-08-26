@@ -26,9 +26,14 @@ router.post("/", function(req, res) {
 
 router.put("/:id", function(req, res) {
   db.Burger.update({
-    devoured: req.body.devoured,
-      where: {id: req.params.id}
-  }).then(function() {
+    devoured: req.body.devoured
+  },
+  {
+    where: {
+      id: req.params.id
+    }
+  }
+  ).then(function() {
     res.redirect("/");
   });
 });
